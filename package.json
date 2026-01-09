@@ -6,10 +6,6 @@
   "scripts": {
     "start": "node index.js"
   },
-  "author": {
-    "name": "Angi Garcia",
-    "email": "tunombre@example.com",
-    "url": "https://github.com/tuusuario"
-  },
+  "author": "Angi Garcia",
   "license": "MIT"
 }
