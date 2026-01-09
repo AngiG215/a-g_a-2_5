@@ -1,7 +1,7 @@
 {
-	"name": "Angi Gar",
+	"name": "Mi Proyecto",
 	"version": "0.0.1",
-	"description": "fcc backend boilerplate",
+	"description": "actualizar",
 	"main": "server.js",
 	"scripts": {
 		"start": "node myApp.js"
@@ -16,5 +16,6 @@
 		"express",
 		"freecodecamp"
 	],
+    "author": "Angi Garc",
 	"license": "MIT"
 }
