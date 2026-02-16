@@ -1,22 +1,21 @@
+
 {
-  "name": "stock-checker-v2",
-  "version": "1.0.0",
-  "description": "",
-  "main": "myApp.js",
-  "directories": {
-    "test": "tests"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node myApp.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "dependencies": {
-    "express": "^5.2.1",
-    "helmet": "3.21.3",
-    "body-parser": "^1.19.0"
-  }
+	"name": "fcc-infosec-challenges",
+	"version": "0.0.1",
+	"description": "fcc backend boilerplate",
+	"main": "server.js",
+	"scripts": {
+		"start": "node myApp.js"
+	},
+	"dependencies": {
+		"express": "^4.14.0",
+		"helmet": "3.21.3"
+	},
+	"keywords": [
+		"node",
+		"hyperdev",
+		"express",
+		"freecodecamp"
+	],
+	"license": "MIT"
 }
