@@ -1,7 +1,7 @@
 {
-  "name": "fcc-helmet-js",
+  "name": "fcc-infosec-helmet",
   "version": "0.0.1",
-  "description": "Infosec with HelmetJS",
+  "description": "Reto Helmet",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
@@ -9,8 +9,8 @@
   "dependencies": {
     "express": "^4.17.1",
     "helmet": "3.21.3",
-    "body-parser": "^1.19.0",
     "cors": "^2.8.5",
-    "chai": "^4.2.0"
+    "chai": "^4.2.0",
+    "body-parser": "^1.19.0"
   }
 }
