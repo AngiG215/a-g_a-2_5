@@ -2,13 +2,13 @@ const express = require('express');
 const helmet = require('helmet');
 const app = express();
 
-// La única línea que freeCodeCamp revisa:
+// La única misión de este archivo:
 app.use(helmet.hidePoweredBy());
 
-// Rutas para que la página cargue bien
-app.get("/", function (request, response) {
-  response.send("Hello Express - Helmet is active!");
+// Una ruta para que no dé error al entrar
+app.get("/", (req, res) => {
+  res.send("Servidor Activo y Protegido");
 });
 
-// ESTO ES LO QUE EL SERVER.JS BUSCA:
+// Esto permite que server.js tome el control
 module.exports = app;
