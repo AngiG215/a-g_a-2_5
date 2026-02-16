@@ -1,17 +1,13 @@
-"scripts": {
-  "start": "node myApp.js"
-}
 {
-  "name": "fcc-helmet",
-  "version": "0.0.1",
-  "main": "server.js",
+  "name": "fcc-helmet-js",
+  "version": "0.1.0",
+  "description": "Reto Helmet de freeCodeCamp",
+  "main": "myApp.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node myApp.js"
   },
   "dependencies": {
     "express": "^4.17.1",
-    "helmet": "3.21.3",
-    "cors": "^2.8.5",
-    "body-parser": "^1.19.0"
+    "helmet": "3.21.3"
   }
 }
