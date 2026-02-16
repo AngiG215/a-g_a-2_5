@@ -1,17 +1,18 @@
 const express = require('express');
-const helmet = require('helmet'); // Importamos Helmet
+const helmet = require('helmet');
 const app = express();
 
-// ESTA ES LA ÚNICA LÍNEA QUE EL TEST BUSCA
+// 1. El reto de freeCodeCamp
 app.use(helmet.hidePoweredBy());
 
-// Una ruta simple para verificar que funciona
+// 2. Servir archivos estáticos (necesario para la interfaz)
+app.use('/public', express.static(process.cwd() + '/public'));
+
+// 3. Ruta principal
 app.get("/", function (request, response) {
-  response.send("Hello Express");
+  response.sendFile(process.cwd() + '/views/index.html');
 });
 
-// ¡ESTO ES LO MÁS IMPORTANTE! 
-// No pongas app.listen aquí. Solo exporta.
+// 4. ¡ESTO ES LO QUE ARREGLA EL ERROR!
+// Exportamos la app para que server.js la use
 module.exports = app;
-const api = require('./server.js');
-app.use('/_api', api);
