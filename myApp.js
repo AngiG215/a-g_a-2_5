@@ -2,19 +2,18 @@ const express = require('express');
 const helmet = require('helmet');
 const app = express();
 
-// 1. EL MIDDLEWARE DEBE IR PRIMERO
+// Esto es lo que el test busca
 app.use(helmet.hidePoweredBy());
 
-// 2. RUTA RESPUESTA (A veces el test la busca)
 app.get("/", (req, res) => {
   res.send("Hello Express");
 });
 
-// 3. EXPORTAR EL APP (Fundamental)
+// ESTO ES VITAL: freeCodeCamp a veces prefiere que 
+// el servidor NO esté escuchando aquí si usas su estructura
 module.exports = app;
 
-// El listen puede quedarse aquí o al final, no afecta si lo anterior está bien
 let port = process.env.PORT || 3000;
 app.listen(port, () => {
-  console.log(`Tu servidor está corriendo en el puerto ${port}`);
+  console.log(`Corriendo en puerto ${port}`);
 });
