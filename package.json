@@ -1,11 +1,21 @@
 {
-  "name": "mi-proyecto",
+  "name": "stock-checker-v2",
   "version": "1.0.0",
-  "description": "Sencillo intento de creación",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
+  "description": "",
+  "main": "myApp.js",
+  "directories": {
+    "test": "tests"
   },
-  "author": "Angi Garcia",
-  "license": "MIT"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node myApp.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1",
+    "helmet": "^3.21.3"
+  }
 }
