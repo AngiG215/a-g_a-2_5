@@ -1,13 +1,22 @@
 {
-  "name": "fcc-helmet-js",
-  "version": "0.1.0",
-  "description": "Reto Helmet de freeCodeCamp",
+  "name": "stock-checker-v2",
+  "version": "1.0.0",
+  "description": "",
   "main": "myApp.js",
+  "directories": {
+    "test": "tests"
+  },
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node myApp.js"
   },
-  "dependencies": {
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+ "dependencies": {
     "express": "^4.17.1",
-    "helmet": "3.21.3"
+    "helmet": "3.21.3",
+    "body-parser": "^1.19.0"
   }
 }
