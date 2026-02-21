@@ -1,20 +1,22 @@
-
-const express = require('express');
-const helmet = require('helmet');
+const express = require('express'); // Requerir Express
+const helmet = require('helmet');   // Requerir Helmet (Punto 3 de tu instrucción)
 const app = express();
 
-// Esto es lo que el test busca
+// --- TU CÓDIGO VA AQUÍ ---
+
+// Configuración de HSTS (Los puntos que corroboramos antes)
+const ninetyDaysInSeconds = 90 * 24 * 60 * 60;
+
+app.use(helmet.hsts({
+  maxAge: ninetyDaysInSeconds,
+  force: true
+}));
+
+// Otras configuraciones típicas de esas lecciones:
 app.use(helmet.hidePoweredBy());
+app.use(helmet.noSniff());
+app.use(helmet.xssFilter());
 
-app.get("/", (req, res) => {
-  res.send("Hello Express");
-});
+// --- FIN DEL CÓDIGO ---
 
-// ESTO ES VITAL: freeCodeCamp a veces prefiere que 
-// el servidor NO esté escuchando aquí si usas su estructura
 module.exports = app;
-
-let port = process.env.PORT || 3000;
-app.listen(port, () => {
-  console.log(`Corriendo en puerto ${port}`);
-});
